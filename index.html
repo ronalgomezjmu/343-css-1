@@ -6,13 +6,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Back to C</title>
   <style>
-    /* do all the work here! */
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.25rem;
+      line-height: 1.5rem;
+    }
+    .time {
+      font-style: italic;
+    }
+    .module {
+      color: red;
+      background-color: #eee;
+      font-family: 'Courier New', Courier, monospace;
+      border-top: 2px solid black;
+      border-bottom: 2px solid black;
+    }
+
+    .code {
+      background-color: #eee;
+      border: 6px double #999;
+      border-radius: 6px;
+    }
   </style>
 </head>
 <body>
   <header>
   <h1>Back to C</h1>
-  <time datetime="2019-12-17">December 17, 2019</time>
+  <time class="time" datetime="2019-12-17">December 17, 2019</time>
   </header>
   <main>
     <p>
@@ -25,11 +46,11 @@
         src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/The_C_Programming_Language%2C_First_Edition_Cover.svg/256px-The_C_Programming_Language%2C_First_Edition_Cover.svg.png"></a>
     <p>
       I read the book cover to cover. All one needed back in the day was to install a compiler. Mom had it easy. She'd freak
-      out if I showed her <code>node_modules</code>. Perhaps someday computing will be simple again. But I think there's a law somewhere
+      out if I showed her <code class="module">node_modules</code>. Perhaps someday computing will be simple again. But I think there's a law somewhere
       that says technological complexity will only increase.
     </p>
     <p>Once I finished, I wrote my first C program. Here it is:</p>
-    <pre>
+    <pre class="code">
 #include &lt;stdio.h&gt;
 
 int main(int argc, char **argv) {
